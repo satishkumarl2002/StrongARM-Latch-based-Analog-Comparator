@@ -94,12 +94,17 @@ Implementation of RS Latch Cell:
 
 ## Simulations:
 ### Transient Analysis:
-Fclk = 2GHz
-Vdd = 1.8V
-Vcm = 1V
-Vdiff = 1mV
+Input Parameters:
+Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 1mV
 <p align="center">
 <img src="2GHz1mv.png"></br>
+  Fig. 6: Testbench 
+</p>
+
+Input Parameters:
+Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 100mV
+<p align="center">
+<img src="2GHz100mv.png"></br>
   Fig. 6: Testbench 
 </p>
 
