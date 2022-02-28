@@ -40,5 +40,5 @@ Y then begins discharging from Vdd. Since they form a cross
 coupled inverter with positive feedback, the node which discharges faster (i.e the one which draws higher current) and falls down to zero while the other node regenerates back to Vdd, depending on the polarity of input differential votalge. Hence it effectively performs the action of a comparator.
 <p align="center">
 <img src="StrongARM Latch Reference Diagram.png"></br>
-  Fig. 1: Current Mirror 
+  Fig. 1: StrongARM Latch 
 </p>
