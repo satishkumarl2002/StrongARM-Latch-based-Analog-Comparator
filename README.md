@@ -74,6 +74,7 @@ Implementation of StrongARM Latch Cell:
 <img src="StrongARM Latch Symbol.png"></br>
   Fig. 4: StrongARM Latch Symbol 
 </p>
+
 ### RS Latch:
 Implementation of RS Latch Cell:
 <p align="center">
