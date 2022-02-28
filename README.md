@@ -29,14 +29,11 @@ output data during precharge phase of the strongArm latch.
 The StrongARM latch topology finds wide usage as a sense amplifier, a comparator, or simply a robust
 latch with high sensitivity.The latch consists of 5 NMOS and 5 PMOS transistors. Transistor M1 and M2 form the input differential pair, transistor M3-M6 form the cross coupled inverters, S1-S4 are the charging transistors and M7 is the tail current transistor. Operation of the latch consists of three phases, Reset, Amplification, and Regeneration.
 
-During the reset phase, input clock is low which turns of the tail current transistor M7 and the input differential pair is disconnected. Nodes P,Q,X,Y charge to Vdd through the
-charging transistors which are on when clock is low. The entire circuit draws no current during reset phase.
-The amplification phase begins as soon as clock goes from low to high turning off the charging transistors and
-turning on M7 thereby activating M1,M2 which draws current
-proportional to the differential input provided at gate terminals
-of M1 and M2 which discharges the nodes P and Q.
-The regeneration phase begins when nodes P and Q discharge to Vdd-Vthn , turning M3 and M4 on. Nodes X and
+During the reset phase, input clock is low which turns of the tail current transistor M7 and the input differential pair M1 and M2 is disconnected. Nodes P,Q,X,Y charge to Vdd through the charging transistors S1,S2,S3,S4 which are on when clock is low. The entire circuit draws no current during reset phase as the cross coupled inverter are turned off.
+
+The amplification phase begins as soon as clock goes from low to high turning off the charging transistors S1,S2,S3,S4 and
+turning on the tail current transistor M7, thereby activating the input differential pair M1,M2 which draws current
+proportional to the input provided at gate terminals of M1 and M2. The current drawn by M1 and M2 discharges the nodes P and Q which were precharged to Vdd.
+The regeneration phase begins when nodes P and Q discharge to Vdd-Vthn , turning M3 and M4 (NMOS transistors of cross coupled inverters) on. Nodes X and
 Y then begins discharging from Vdd. Since they form a cross
-coupled inverter with positive feedback, eventually one node
-regenerates back to Vdd and the other node falls to zero,
-depending on the polarity of input differential votalge.
+coupled inverter with positive feedback, the node which discharges faster (i.e the one which draws higher current) and falls down to zero while the other node regenerates back to Vdd, depending on the polarity of input differential votalge. Hence it effectively performs the action of a comparator.
