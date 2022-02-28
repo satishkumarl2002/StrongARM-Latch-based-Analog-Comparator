@@ -52,12 +52,12 @@ During the reset phase , the output nodes of the StrongArm Latch is precharged t
 
 # Tools Used:
 
-<b>• Synopsys Custom Compiler:</b></br>
+Synopsys Custom Compiler:</b></br>
 &emsp;The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
 
-<b>• Synopsys Primewave:</b></br>
+Synopsys Primewave:</b></br>
 &emsp;PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
 
-<b>• Synopsys 28nm PDK:</b></br>
+Synopsys 28nm PDK:</b></br>
 &emsp;The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
