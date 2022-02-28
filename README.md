@@ -67,7 +67,7 @@ The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of
 ### StrongARM Latch:
 Implementation of StrongARM Latch Cell:
 <p align="center">
-<img src="Images/StrongARM Latch Schematic.png"></br>
+<img src="/Images/StrongARM Latch Schematic.png"></br>
   Fig. 3: StrongARM Latch Schematic 
 </p>
 <p align="center">
