@@ -39,14 +39,14 @@ The regeneration phase begins when nodes P and Q discharge to Vdd-Vthn , turning
 Y then begins discharging from Vdd. Since they form a cross
 coupled inverter with positive feedback, the node which discharges faster (i.e the one which draws higher current) and falls down to zero while the other node regenerates back to Vdd, depending on the polarity of input differential votalge. Hence it effectively performs the action of a comparator.
 <p align="center">
-<img src="StrongARM Latch Reference Diagram.png"></br>
+<img src="/Images/StrongARM Latch Reference Diagram.png"></br>
   Fig. 1: StrongARM Latch 
 </p>
 
 # RS Latch
 During the reset phase , the output nodes of the StrongArm Latch is precharged to Vdd, hence erasing its previous output which leads to the current output not representing a valid logic level, which confuses the subsequent stages. This issue is resolved by the addition of a reset-set latch connected to the output terminals of the StrongARM latch. The RS latch can change its state only if one of the output of the previous stage falls to zero. This latch then retains the state as the StrongARM latch enters reset phase. 
 <p align="center">
-<img src="StrongARM Latch followed by RS Latch.png"></br>
+<img src="/Images/StrongARM Latch followed by RS Latch.png"></br>
   Fig. 2: StrongARM Latch followed by RS Latch 
 </p>
 
@@ -71,24 +71,24 @@ Implementation of StrongARM Latch Cell:
   Fig. 3: StrongARM Latch Schematic 
 </p>
 <p align="center">
-<img src="StrongARM Latch Symbol.png"></br>
+<img src="/Images/StrongARM Latch Symbol.png"></br>
   Fig. 4: StrongARM Latch Symbol 
 </p>
 
 ### RS Latch:
 Implementation of RS Latch Cell:
 <p align="center">
-<img src="RS Latch Schematic.png"></br>
+<img src="/Images/RS Latch Schematic.png"></br>
   Fig. 5: RS Latch Schematic 
 </p>
 <p align="center">
-<img src="RS Latch Symbol.png"></br>
+<img src="/Images/RS Latch Symbol.png"></br>
   Fig. 6: RS Latch Symbol 
 </p>
 
 ### Comparator Testbench:
 <p align="center">
-<img src="Comparator Testbench.png"></br>
+<img src="/Images/Comparator Testbench.png"></br>
   Fig. 7: Testbench 
 </p>
 
@@ -97,29 +97,29 @@ Implementation of RS Latch Cell:
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 1mV
 <p align="center">
-<img src="2GHz1mv.png"></br>
-  Fig. 8: Testbench 
+<img src="/Images/2GHz1mv.png"></br>
+  Fig. 8: Voltage vs time waveforms
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 100mV
 <p align="center">
-<img src="2Ghz100mv.png"></br>
-  Fig. 9: Testbench 
+<img src="/Images/2Ghz100mv.png"></br>
+  Fig. 9: Voltage vs time waveforms 
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 100mV
 <p align="center">
-<img src="2Ghz100mv2.png"></br>
-  Fig. 10: Testbench 
+<img src="/Images/2Ghz100mv2.png"></br>
+  Fig. 10: Voltage vs time waveforms 
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 1mV
 <p align="center">
-<img src="2GHz1mv2.png"></br>
-  Fig. 11: Testbench 
+<img src="/Images/2GHz1mv2.png"></br>
+  Fig. 11: Voltage vs time waveforms 
 </p>
 
 # Netlist of the circuit
