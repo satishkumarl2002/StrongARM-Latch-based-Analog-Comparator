@@ -237,17 +237,12 @@ The sharp upward and downward spikes in the waveforms of voltage of node X and Y
 • <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
 
 # References:
-[1] B. Razavi, “The StrongARM Latch [a circuit for all seasons],” IEEE
-Solid State Circuits Mag., vol. 7, no. 2, pp. 12–17, Spring 2015. doi:
-10.1109/MSSC.2015.2418155.
-[2] B. Razavi, ”The Design of a Comparator [The Analog Mind],” in IEEE
-Solid-State Circuits Magazine, vol. 12, no. 4, pp. 8-14, Fall 2020, doi:
-10.1109/MSSC.2020.3021865.
-[3] A. Almansouri, A. Alturki, A. Alshehri, T. Al-Attar and H. Fariborzi, ”Improved StrongARM latch comparator: Design, analysis and
-performance evaluation,” 2017 13th Conference on Ph.D. Research
-in Microelectronics and Electronics (PRIME), 2017, pp. 89-92, doi:
-10.1109/PRIME.2017.7974114.
-[4] R vinoth, S Ramasamy, ”Design and Implementation of High Speed
-Latched Comparator using gm/Id Sizing Method
+[1] B. Razavi, “The StrongARM Latch [a circuit for all seasons],” IEEE Solid State Circuits Mag., vol. 7, no. 2, pp. 12–17, Spring 2015. doi: 10.1109/MSSC.2015.2418155.
+
+[2] B. Razavi, ”The Design of a Comparator [The Analog Mind],” in IEEE Solid-State Circuits Magazine, vol. 12, no. 4, pp. 8-14, Fall 2020, doi: 10.1109/MSSC.2020.3021865.
+
+[3] A. Almansouri, A. Alturki, A. Alshehri, T. Al-Attar and H. Fariborzi, ”Improved StrongARM latch comparator: Design, analysis and performance evaluation,” 2017 13th Conference on Ph.D. Research in Microelectronics and Electronics (PRIME), 2017, pp. 89-92, doi: 10.1109/PRIME.2017.7974114.
+
+[4] R vinoth, S Ramasamy, ”Design and Implementation of High Speed Latched Comparator using gm/Id Sizing Method
 
 
