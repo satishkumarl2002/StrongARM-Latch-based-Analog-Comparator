@@ -86,3 +86,10 @@ Implementation of RS Latch Cell:
   Fig. 6: RS Latch Symbol 
 </p>
 
+### Comparator Testbench:
+<p align="center">
+<img src="Comparator Testbench.png"></br>
+  Fig. 6: Testbench 
+</p>
+
+
