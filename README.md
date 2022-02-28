@@ -89,7 +89,7 @@ Implementation of RS Latch Cell:
 ### Comparator Testbench:
 <p align="center">
 <img src="Comparator Testbench.png"></br>
-  Fig. 6: Testbench 
+  Fig. 7: Testbench 
 </p>
 
 ## Simulations:
@@ -98,28 +98,28 @@ Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 1mV
 <p align="center">
 <img src="2GHz1mv.png"></br>
-  Fig. 6: Testbench 
+  Fig. 8: Testbench 
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 100mV
 <p align="center">
 <img src="2Ghz100mv.png"></br>
-  Fig. 6: Testbench 
+  Fig. 9: Testbench 
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 100mV
 <p align="center">
 <img src="2Ghz100mv2.png"></br>
-  Fig. 6: Testbench 
+  Fig. 10: Testbench 
 </p>
 
 Input Parameters:
 Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 1mV
 <p align="center">
 <img src="2GHz1mv2.png"></br>
-  Fig. 6: Testbench 
+  Fig. 11: Testbench 
 </p>
 
 # Netlist of the circuit
