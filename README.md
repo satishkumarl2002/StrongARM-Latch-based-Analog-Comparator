@@ -70,4 +70,8 @@ Implementation of StrongARM Latch Cell:
 <img src="StrongARM Latch Schematic.png"></br>
   Fig. 3: StrongARM Latch Schematic 
 </p>
+<p align="center">
+<img src="StrongARM Latch Symbol.png"></br>
+  Fig. 3: StrongARM Latch Symbol 
+</p>
 
