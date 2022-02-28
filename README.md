@@ -122,4 +122,105 @@ Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 1mV
   Fig. 6: Testbench 
 </p>
 
+# Netlist of the circuit
+
+Final Netlist of the circuit is as follows,
+
+'''
+*  Generated for: PrimeSim
+*  Design library name: AnalogComparator
+*  Design cell name: StrongARM_Latch_tb
+*  Design view name: schematic
+.lib 'hspice/saed32nm.lib' TT
+.param a=0.001
+*Custom Compiler Version S-2021.09
+*Mon Feb 28 19:02:35 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : AnalogComparator
+* Cell             : StrongARM_Latch
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt strongarm_latch clk gnd_1 vdd vin1 vin2 vx vy vt_bulk_n_gnd!
++ vt_bulk_p_vdd!
+xm7 net37 clk gnd_1 vt_bulk_n_gnd! n105 w=2u l=0.03u nf=20 m=1
+xm4 vy vx net17 vt_bulk_n_gnd! n105 w=5u l=0.03u nf=50 m=1
+xm3 vx vy net7 vt_bulk_n_gnd! n105 w=5u l=0.03u nf=50 m=1
+xm2 net17 vin2 net37 vt_bulk_n_gnd! n105 w=10u l=0.03u nf=100 m=1
+xm1 net7 vin1 net37 vt_bulk_n_gnd! n105 w=10u l=0.03u nf=100 m=1
+xs2 net17 clk vdd vt_bulk_p_vdd! p105 w=0.5u l=0.03u nf=5 m=1
+xs4 vy clk vdd vt_bulk_p_vdd! p105 w=0.5u l=0.03u nf=5 m=1
+xs1 net7 clk vdd vt_bulk_p_vdd! p105 w=0.5u l=0.03u nf=5 m=1
+xs3 vx clk vdd vt_bulk_p_vdd! p105 w=0.5u l=0.03u nf=5 m=1
+xm6 vy vx vdd vt_bulk_p_vdd! p105 w=2.5u l=0.03u nf=25 m=1
+xm5 vx vy vdd vt_bulk_p_vdd! p105 w=2.5u l=0.03u nf=25 m=1
+.ends strongarm_latch
+
+********************************************************************************
+* Library          : AnalogComparator
+* Cell             : RS_Latch
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt rs_latch gnd_1 va vb vdd vx vy vt_bulk_n_gnd! vt_bulk_p_vdd!
+xm10 net23 vy vdd vt_bulk_p_vdd! p105 w=0.8u l=0.03u nf=8 m=1
+xm15 vb va vdd vt_bulk_p_vdd! p105 w=0.8u l=0.03u nf=8 m=1
+xm14 va vb vdd vt_bulk_p_vdd! p105 w=0.8u l=0.03u nf=8 m=1
+xm8 net13 vx vdd vt_bulk_p_vdd! p105 w=0.8u l=0.03u nf=8 m=1
+xm11 net23 vy gnd_1 vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=2 m=1
+xm13 vb net23 gnd_1 vt_bulk_n_gnd! n105 w=0.8u l=0.03u nf=8 m=1
+xm12 va net13 gnd_1 vt_bulk_n_gnd! n105 w=0.8u l=0.03u nf=8 m=1
+xm9 net13 vx gnd_1 vt_bulk_n_gnd! n105 w=0.2u l=0.03u nf=2 m=1
+.ends rs_latch
+
+********************************************************************************
+* Library          : AnalogComparator
+* Cell             : StrongARM_Latch_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 clk gnd! net8 vin1 vin2 vx vy gnd! vdd! strongarm_latch
+v3 vin1 gnd! dc=0.5 ac=0
+v1 net8 gnd! dc=1.8
+v2 clk gnd! dc=0 pulse ( 1.8 0 0 10p 10p 0.25n 0.5n )
+c6 vb gnd! c=20f
+c5 va gnd! c=20f
+v10 vin2 gnd! dc=1 sin ( 0.5 'a' 1G 0 0 0 )
+xi12 gnd! va vb net8 vx vy gnd! vdd! rs_latch
+
+
+
+
+
+
+
+
+.tran '0.001*(10n-0)' '10n' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(clk) v(va) v(vb) v(vin1) v(vin2) v(vx) v(vy)
+
+.temp 25
+
+
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+
+
+
+
+
+.end
+'''
+
 
