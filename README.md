@@ -127,6 +127,7 @@ Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 1mV
 Final Netlist of the circuit is as follows,
 
 '''
+
 *  Generated for: PrimeSim
 *  Design library name: AnalogComparator
 *  Design cell name: StrongARM_Latch_tb
@@ -221,6 +222,7 @@ xi12 gnd! va vb net8 vx vy gnd! vdd! rs_latch
 
 
 .end
+
 '''
 
 
