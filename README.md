@@ -226,6 +226,6 @@ xi12 gnd! va vb net8 vx vy gnd! vdd! rs_latch
 ```
 
 # Observations:
-The sharp upward and downward spikes in the waveforms of voltage of node X and Y is due to the reset/precharge action and regenerative action of the latch respectively. The maximum operating frequency of the designed comparator is 2GHz and for a differential voltage of 1mV. 
+The sharp upward and downward spikes in the waveforms of voltage of node X and Y is due to the reset/precharge action and regenerative action of the latch respectively. The operation of the circuit in room temperature was tested with various common mode voltages ranging from 0.5V to 1V and differential voltage ranging from 1mV to a few hundred milli volts with a 20fF capacitor load. The maximum operating frequency of the designed comparator is found to be 2GHz and minimum a differential voltage of 1mV for satisfactory waveforms. The delay in rise and fall of output voltage of RS latch may prove critical in high speed applications. A modified RS latch consisting of more transistors can be used to reduce the delay.  Hence a high speed analog comparator with a maximum clock frequency of 2GHz is designed and simulated using Synopsis Custom Compiler on 28nm CMOS Technology. 
 
 
