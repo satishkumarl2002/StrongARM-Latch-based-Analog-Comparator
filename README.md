@@ -228,4 +228,26 @@ xi12 gnd! va vb net8 vx vy gnd! vdd! rs_latch
 # Observations:
 The sharp upward and downward spikes in the waveforms of voltage of node X and Y is due to the reset/precharge action and regenerative action of the latch respectively. The operation of the circuit in room temperature was tested with various common mode voltages ranging from 0.5V to 1V and differential voltage ranging from 1mV to a few hundred milli volts with a 20fF capacitor load. The maximum operating frequency of the designed comparator is found to be 2GHz and minimum a differential voltage of 1mV for satisfactory waveforms. The delay in rise and fall of output voltage of RS latch may prove critical in high speed applications. A modified RS latch consisting of more transistors can be used to reduce the delay.  Hence a high speed analog comparator with a maximum clock frequency of 2GHz is designed and simulated using Synopsis Custom Compiler on 28nm CMOS Technology. 
 
+# Author:
+• Satish Kumar L, B.Tech(EEE), National Institute of Technology, Tiruchirappalli
+
+# Acknowledgements:
+• <a href='https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/'>Cloud Based Analog IC Design Hackathon</a></br>
+• <a href='https://www.synopsys.com/'>Synopsys India</a></br>
+• <a href='https://www.vlsisystemdesign.com/'>VLSI System Design (VSD) Corp. Pvt. Ltd India</a></br>
+
+# References:
+[1] B. Razavi, “The StrongARM Latch [a circuit for all seasons],” IEEE
+Solid State Circuits Mag., vol. 7, no. 2, pp. 12–17, Spring 2015. doi:
+10.1109/MSSC.2015.2418155.
+[2] B. Razavi, ”The Design of a Comparator [The Analog Mind],” in IEEE
+Solid-State Circuits Magazine, vol. 12, no. 4, pp. 8-14, Fall 2020, doi:
+10.1109/MSSC.2020.3021865.
+[3] A. Almansouri, A. Alturki, A. Alshehri, T. Al-Attar and H. Fariborzi, ”Improved StrongARM latch comparator: Design, analysis and
+performance evaluation,” 2017 13th Conference on Ph.D. Research
+in Microelectronics and Electronics (PRIME), 2017, pp. 89-92, doi:
+10.1109/PRIME.2017.7974114.
+[4] R vinoth, S Ramasamy, ”Design and Implementation of High Speed
+Latched Comparator using gm/Id Sizing Method
+
 
