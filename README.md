@@ -225,4 +225,7 @@ xi12 gnd! va vb net8 vx vy gnd! vdd! rs_latch
 
 ```
 
+# Observations:
+The sharp upward and downward spikes in the waveforms of voltage of node X and Y is due to the reset/precharge action and regenerative action of the latch respectively. The maximum operating frequency of the designed comparator is 2GHz and for a differential voltage of 1mV. 
+
 
