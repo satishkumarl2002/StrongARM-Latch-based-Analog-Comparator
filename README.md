@@ -42,3 +42,7 @@ coupled inverter with positive feedback, the node which discharges faster (i.e t
 <img src="StrongARM Latch Reference Diagram.png"></br>
   Fig. 1: StrongARM Latch 
 </p>
+
+# RS Latch
+During the reset phase , the output nodes of the StrongArm Latch is precharged to Vdd, hence erasing its previous output which leads to the current output not representing a valid logic level, which confuses the subsequent stages. This issue is resolved by the addition of a reset-set latch connected to the output terminals of the StrongARM latch. The RS latch can change its state only if one of the output of the previous stage falls to zero. This latch then retains the state as the StrongARM latch enters reset phase. 
+
