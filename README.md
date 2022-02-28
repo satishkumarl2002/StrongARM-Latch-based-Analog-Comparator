@@ -61,3 +61,13 @@ PrimeWave™ Design Environment is a comprehensive and flexible environment for 
 Synopsys 28nm PDK:</b></br>
 The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
+# Pre-Layout Schematics and Simulations:
+
+## Schematics:
+### StrongARM Latch:
+Implementation of StrongARM Latch Cell:
+<p align="center">
+<img src="StrongARM Latch Schematic.png"></br>
+  Fig. 3: StrongARM Latch Schematic 
+</p>
+
