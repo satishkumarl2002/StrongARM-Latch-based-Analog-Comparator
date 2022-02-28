@@ -108,4 +108,11 @@ Fclk = 2GHz; Vdd = 1.8V; Vcm = 1V; Vdiff = 100mV
   Fig. 6: Testbench 
 </p>
 
+Input Parameters:
+Fclk = 2GHz; Vdd = 1.8V; Vcm = 0.5V; Vdiff = 100mV
+<p align="center">
+<img src="2Ghz100mv2.png"></br>
+  Fig. 6: Testbench 
+</p>
+
 
