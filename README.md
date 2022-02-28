@@ -81,4 +81,8 @@ Implementation of RS Latch Cell:
 <img src="RS Latch Schematic.png"></br>
   Fig. 5: RS Latch Schematic 
 </p>
+<p align="center">
+<img src="RS Latch Symbol.png"></br>
+  Fig. 6: RS Latch Symbol 
+</p>
 
